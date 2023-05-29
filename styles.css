@@ -1,0 +1,251 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #007dbc;
+  background-image: linear-gradient(to bottom, #007dbc, #183668);
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  min-width: 100%;
+  min-height: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: azure;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 150vh;
+}
+p {
+  color: #012a47;
+  text-transform: none;
+}
+header {
+  /* background-color: #013A63; */
+  /* height: 10%; */
+  display: flex;
+  position: relative;
+  margin-top: 3em;
+}
+.panel h1 {
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 0.2em;
+}
+.logo {
+  /* min-width: 10em; */
+  max-width: 20em;
+  margin: auto;
+}
+
+.panel {
+  text-decoration: none;
+  padding: 4% 0;
+  /* background-color: aliceblue; */
+}
+.panel-panel {
+  padding: 1em;
+  margin: 0em 2em;
+  background-color: aliceblue;
+  border-radius: 2em;
+  box-shadow: 0 0 0.5em 0.5em rgba(57, 57, 57, 0.179);
+  color: black;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: large;
+}
+.separator {
+  list-style: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 2em;
+  width: 30em;
+  height: 0.1em;
+  margin: auto;
+  text-align: center;
+}
+.column {
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.column-description{
+  padding: 0!important;
+  padding-top:2% !important;
+}
+.column-text {
+  margin: 1em auto;
+  max-width: 90%;
+  width: 67em;
+}
+.column-instructions {
+  padding: 1em 9em;
+  list-style: none;
+}
+.column-instructions p {
+  margin: auto;
+}
+.button {
+  min-width: 7em;
+  width: 10em;
+  max-width: 10em;
+  height: 100%;
+  margin: 1em;
+  border-radius: 0.5em;
+  border-color: rgba(0, 0, 0, 0.592);
+  background-color: #02558b;
+  box-shadow: 0 0 0.7em 0.2em rgba(57, 57, 57, 0.179);
+}
+.button:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: #013a63;
+}
+.button p {
+  text-align: center;
+  justify-content: center;
+  padding: 10% 2%;
+  margin: auto;
+  text-transform: uppercase;
+  color: azure;
+  font-weight: bolder;
+}
+.button p:hover {
+  color: rgba(240, 255, 255, 0.486);
+}
+
+.arjs-loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arjs-loader div {
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+}
+
+#mybutton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100;
+  max-height: 2em;
+  max-width: 2em;
+}
+
+#sound {
+  position: fixed;
+  top: 0;
+  left: 92%;
+  display: none;
+  max-height: 4em;
+  max-width: 4em;
+  min-height: 4em;
+  min-width: 4em;
+  margin: 2em;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+}
+#sound img {
+  width: 100%;
+}
+.images{
+  position: absolute;
+  padding-top: 20em;
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.images img{
+  min-width: 20%;
+  max-width: 20%;
+}
+/* .images img:nth-child(1){
+}
+.images img:nth-child(2){
+} */
+@media (max-width: 1300px) {
+  #sound {
+    left: 90%;
+  }
+  .column-text{
+    width: auto;
+  }
+}
+@media (max-width: 1000px) {
+  #sound {
+    left: 85%;
+  }
+}
+@media (max-width: 700px) {
+  #sound {
+    left: 80%;
+  }
+  .column-instructions {
+    padding: 0.8em 1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 500px) {
+  #sound {
+    left: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column-button {
+    padding: 0.8em 3.3em;
+  }
+}
+@media (max-width: 900px) {
+  .panel {
+    text-decoration: none;
+    padding: 1em 0;
+  }
+  header {
+    display: flex;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .logo {
+    margin: auto;
+    height: 5em;
+    width: fit-content;
+  }
+}
+@media (max-width: 1000px) {
+  .separator {
+    width: 20em;
+  }
+  .images{
+    display: none;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
